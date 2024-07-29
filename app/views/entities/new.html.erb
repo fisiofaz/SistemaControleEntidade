@@ -1,0 +1,15 @@
+<%= form_with(model: @entity, local: true) do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  
+    <%= form.label :entity_type %>
+    <%= form.text_field :entity_type %>
+  
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  
+    <%= form.label :cover_image %>
+    <%= form.file_field :cover_image %>
+  
+    <%= form.submit %>
+<% end %>
