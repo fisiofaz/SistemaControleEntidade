@@ -13,3 +13,32 @@
   
     <%= form.submit %>
 <% end %>
+
+<%= form_with(url: entities_path, method: :get, local: true) do |form| %>
+  <%= form.label :search, 'Search:' %>
+  <%= form.text_field :search, value: params[:search] %>
+  <%= form.submit 'Search' %>
+<% end %>
+
+<%= paginate @entities %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entities.each do |entity| %>
+      <tr>
+        <td><%= entity.name %></td>
+        <td><%= entity.entity_type %></td>
+        <td><%= entity.description %></td>
+        <td><%= link_to 'Show', entity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
