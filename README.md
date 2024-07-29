@@ -6,7 +6,7 @@
 2. Preencha os campos obrigatórios: Nome, Tipo, Descrição e Imagem de Capa.
 3. Clique em "Salvar" para criar a nova entidade.
 
-![Tela de Cadastro]
+Tela de Cadastro
 
 ## Listagem e Pesquisa
 
@@ -14,7 +14,7 @@
 2. Use o campo de pesquisa para encontrar entidades específicas.
 3. Filtre a listagem por tipo, data de criação, etc.
 
-![Tela de Listagem]
+Tela de Listagem
 
 # Documentação Técnica
 
